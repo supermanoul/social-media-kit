@@ -69,12 +69,18 @@ npm run deploy              # Deploy to Netlify
 2. **CORS errors**: Check if proxy services are working, fallback to manual data
 3. **Data not loading**: Verify manual-data.json syntax and network connectivity
 
+## 🌐 Deployment URLs
+- **GitHub Repository**: https://github.com/supermanoul/social-media-kit
+- **Live Production**: https://social-media-1oupavtc9-manuels-projects-8f82680a.vercel.app
+- **Vercel Dashboard**: https://vercel.com/manuels-projects-8f82680a/social-media-kit
+
 ## 🔮 Next Steps
-- [ ] Test application in browser
-- [ ] Verify all JavaScript modules load correctly
-- [ ] Check chart rendering and data visualization
-- [ ] Test responsive design on mobile devices
-- [ ] Deploy to GitHub and configure hosting
+- [x] Test application in browser
+- [x] Verify all JavaScript modules load correctly
+- [x] Check chart rendering and data visualization
+- [x] Test responsive design on mobile devices
+- [x] Deploy to GitHub and configure hosting
+- [x] Deploy to Vercel for production hosting
 
 ## 📝 Development Notes
 - Project created and fixed by Claude Code
