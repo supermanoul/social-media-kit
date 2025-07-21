@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Kit - Samantha Crianza</title>
+    <meta name="description" content="Kit de medios sociales profesional para Samantha - Asesora en Crianza Respetuosa">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👶</text></svg>">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.30.0/index.min.js"></script>
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Social Media Kit - Samantha Crianza">
+    <meta property="og:description" content="Kit de medios sociales profesional - Asesora en Crianza Respetuosa">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face&auto=format">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Social Media Kit - Samantha Crianza">
+    <meta name="twitter:description" content="Asesora en Crianza Respetuosa - Kit de medios sociales profesional">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2>Cargando datos...</h2>
+            <p id="loadingStatus">Inicializando sistema híbrido</p>
+        </div>
+    </div>
+
+    <!-- Main Dashboard -->
+    <div id="dashboard" class="dashboard" style="display: none;">
+        
+        <!-- Header Section -->
+        <header class="dashboard-header">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face&auto=format" alt="Samantha" id="profileImage">
+                    <div class="verified-badge" id="verifiedBadge" style="display: none;">✓</div>
+                </div>
+                
+                <div class="profile-info">
+                    <h1 id="profileName">Samantha | Asesora Crianza</h1>
+                    <p id="profileBio">Asesora en Crianza Respetuosa | Educadora Infantil | Contenido para madres primerizas</p>
+                    
+                    <div class="social-handles">
+                        <div class="handle">
+                            <span class="platform-icon">📷</span>
+                            <span id="instagramHandle">@samanthacrianza</span>
+                        </div>
+                        <div class="handle">
+                            <span class="platform-icon">🎵</span>
+                            <span id="tiktokHandle">@samanthacrianza</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="update-controls">
+                    <button id="updateBtn" class="update-btn">
+                        <span class="update-icon">🔄</span>
+                        <span class="update-text">Actualizar</span>
+                    </button>
+                    <div class="data-status" id="dataStatus">
+                        <div class="status-indicator active"></div>
+                        <span>Datos actualizados</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Metrics -->
+        <section class="main-metrics">
+            <div class="metric-card total-followers">
+                <div class="metric-icon">👥</div>
+                <div class="metric-content">
+                    <h3>Seguidores Totales</h3>
+                    <div class="metric-value" id="totalFollowers">-</div>
+                    <div class="metric-change" id="totalFollowersChange">+0%</div>
+                </div>
+            </div>
+            
+            <div class="metric-card engagement-rate">
+                <div class="metric-icon">💖</div>
+                <div class="metric-content">
+                    <h3>Engagement Rate</h3>
+                    <div class="metric-value" id="engagementRate">-</div>
+                    <div class="metric-change" id="engagementChange">Promedio ponderado</div>
+                </div>
+            </div>
+            
+            <div class="metric-card monthly-reach">
+                <div class="metric-icon">📈</div>
+                <div class="metric-content">
+                    <h3>Alcance Mensual</h3>
+                    <div class="metric-value" id="monthlyReach">-</div>
+                    <div class="metric-change" id="reachChange">Estimado</div>
+                </div>
+            </div>
+            
+            <div class="metric-card avg-views">
+                <div class="metric-icon">👁️</div>
+                <div class="metric-content">
+                    <h3>Views Promedio</h3>
+                    <div class="metric-value" id="avgViews">-</div>
+                    <div class="metric-change" id="viewsChange">Por publicación</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Charts Section -->
+        <section class="charts-section">
+            <div class="chart-container growth-chart">
+                <h3>Crecimiento de Seguidores</h3>
+                <canvas id="growthChart"></canvas>
+            </div>
+            
+            <div class="chart-container platform-distribution">
+                <h3>Distribución por Plataforma</h3>
+                <canvas id="platformChart"></canvas>
+            </div>
+            
+            <div class="chart-container engagement-breakdown">
+                <h3>Engagement por Tipo de Contenido</h3>
+                <canvas id="engagementChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Top Content Section -->
+        <section class="top-content-section">
+            <h3>Top Contenido del Mes</h3>
+            <div class="content-grid" id="topContentGrid">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Analytics Detail -->
+        <section class="analytics-section">
+            <div class="analytics-grid">
+                
+                <!-- Audience Demographics -->
+                <div class="analytics-card demographics">
+                    <h4>👥 Demographics</h4>
+                    <div class="demographics-chart">
+                        <div class="demo-item">
+                            <span class="demo-label">Mujeres</span>
+                            <div class="demo-bar">
+                                <div class="demo-fill female" style="width: 87.3%"></div>
+                            </div>
+                            <span class="demo-value">87.3%</span>
+                        </div>
+                        <div class="demo-item">
+                            <span class="demo-label">25-34 años</span>
+                            <div class="demo-bar">
+                                <div class="demo-fill primary" style="width: 68.4%"></div>
+                            </div>
+                            <span class="demo-value">68.4%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Best Times -->
+                <div class="analytics-card best-times">
+                    <h4>⏰ Mejores Horarios</h4>
+                    <div class="time-slots" id="bestTimes">
+                        <!-- Dynamic content -->
+                    </div>
+                </div>
+
+                <!-- Top Hashtags -->
+                <div class="analytics-card hashtags">
+                    <h4>🏷️ Top Hashtags</h4>
+                    <div class="hashtag-list" id="topHashtags">
+                        <!-- Dynamic content -->
+                    </div>
+                </div>
+
+                <!-- Location Insights -->
+                <div class="analytics-card locations">
+                    <h4>🌍 Ubicaciones Top</h4>
+                    <div class="location-list" id="topLocations">
+                        <!-- Dynamic content -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section">
+            <h3>💰 Tarifas y Colaboraciones</h3>
+            <div class="pricing-grid">
+                
+                <div class="pricing-card instagram">
+                    <h4>📷 Instagram</h4>
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span>Post</span>
+                            <span class="price">€450-750</span>
+                        </div>
+                        <div class="price-item">
+                            <span>Story</span>
+                            <span class="price">€200-350</span>
+                        </div>
+                        <div class="price-item">
+                            <span>Reel</span>
+                            <span class="price">€600-950</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-card tiktok">
+                    <h4>🎵 TikTok</h4>
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span>Video</span>
+                            <span class="price">€600-900</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-card packages">
+                    <h4>📦 Paquetes</h4>
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span>Cross-Platform</span>
+                            <span class="price">€2,200</span>
+                        </div>
+                        <div class="price-item">
+                            <span>Mensual</span>
+                            <span class="price">€4,500</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Brand Collaborations -->
+        <section class="collaborations-section">
+            <h3>🤝 Colaboraciones de Marca</h3>
+            <div class="collaborations-grid" id="brandCollaborations">
+                <!-- Dynamic content -->
+            </div>
+        </section>
+
+        <!-- Achievements -->
+        <section class="achievements-section">
+            <h3>🏆 Logros y Reconocimientos</h3>
+            <div class="achievements-grid" id="achievementsList">
+                <!-- Dynamic content -->
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="dashboard-footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>© 2024 Samantha - Crianza Respetuosa</p>
+                    <p>Última actualización: <span id="lastUpdated">-</span></p>
+                </div>
+                <div class="footer-actions">
+                    <button id="exportBtn" class="export-btn">📄 Exportar PDF</button>
+                    <button id="shareBtn" class="share-btn">📤 Compartir</button>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Notification System -->
+    <div id="notificationContainer" class="notification-container"></div>
+
+    <!-- Scripts -->
+    <script src="./utils/rate-limiter.js"></script>
+    <script src="./utils/cors-proxy.js"></script>
+    <script src="./utils/error-handler.js"></script>
+    <script src="./assets/js/scraping-engine.js"></script>
+    <script src="./assets/js/data-manager.js"></script>
+    <script src="./assets/js/analytics.js"></script>
+    <script src="./assets/js/dashboard.js"></script>
+
+    <!-- Initialize Application -->
+    <script>
+        document.addEventListener('DOMContentLoaded', async function() {
+            console.log('🚀 Initializing Social Media Kit...');
+            
+            try {
+                // Initialize dashboard
+                if (window.Dashboard) {
+                    window.dashboard = new Dashboard();
+                    await window.dashboard.init();
+                } else {
+                    throw new Error('Dashboard class not found');
+                }
+            } catch (error) {
+                console.error('❌ Failed to initialize application:', error);
+                document.getElementById('loadingStatus').textContent = 'Error al inicializar la aplicación';
+            }
+        });
+    </script>
+</body>
+</html>

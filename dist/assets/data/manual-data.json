@@ -1,0 +1,219 @@
+{
+    "profile": {
+        "name": "Samantha | Asesora Crianza",
+        "username": "samanthacrianza",
+        "bio": "Asesora en Crianza Respetuosa | Educadora Infantil | Contenido para madres primerizas",
+        "niche": "crianza-educacion-infantil",
+        "location": "España",
+        "languages": ["español"],
+        "profileImage": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face&auto=format"
+    },
+    "instagram": {
+        "handle": "samanthacrianza",
+        "followers": 46200,
+        "following": 1240,
+        "posts": 892,
+        "verified": false,
+        "engagementRate": 7.8,
+        "averageLikes": 1250,
+        "averageComments": 95,
+        "averageViews": 18750,
+        "topHashtags": [
+            {"tag": "#crianzarespetuosa", "performance": "+34% alcance", "usage": 67},
+            {"tag": "#mamaprimeriza", "performance": "+28% engagement", "usage": 45},
+            {"tag": "#educacioninfantil", "performance": "+22% alcance", "usage": 52},
+            {"tag": "#maternidad", "performance": "+19% engagement", "usage": 38},
+            {"tag": "#crianzaconsciente", "performance": "+25% alcance", "usage": 41}
+        ],
+        "topPosts": [
+            {
+                "title": "Diferencia entre castigo y consecuencia natural",
+                "likes": 25400,
+                "comments": 1200,
+                "engagement": 8.9,
+                "date": "2024-12-15",
+                "hashtags": ["#crianzarespetuosa", "#educacioninfantil"]
+            },
+            {
+                "title": "5 frases que fortalecen la autoestima infantil", 
+                "likes": 18700,
+                "comments": 890,
+                "engagement": 7.3,
+                "date": "2024-12-10",
+                "hashtags": ["#autoestima", "#crianzarespetuosa"]
+            },
+            {
+                "title": "Cómo gestionar las rabietas sin gritos",
+                "likes": 22100,
+                "comments": 1050,
+                "engagement": 8.1,
+                "date": "2024-12-08",
+                "hashtags": ["#rabietas", "#mamaprimeriza"]
+            },
+            {
+                "title": "Rutinas que realmente funcionan para dormir",
+                "likes": 16200,
+                "comments": 765,
+                "engagement": 6.8,
+                "date": "2024-12-05",
+                "hashtags": ["#rutinas", "#suenoinfantil"]
+            },
+            {
+                "title": "Límites con amor: la clave del respeto mutuo",
+                "likes": 19800,
+                "comments": 920,
+                "engagement": 7.6,
+                "date": "2024-12-02",
+                "hashtags": ["#limites", "#crianzarespetuosa"]
+            }
+        ],
+        "bestTimes": ["9:00-11:00", "17:00-19:00", "21:00-22:00"],
+        "bestDays": ["Lunes", "Miércoles", "Viernes", "Domingo"],
+        "monthlyGrowth": [
+            {"month": "Jul 2024", "followers": 39200},
+            {"month": "Ago 2024", "followers": 40800},
+            {"month": "Sep 2024", "followers": 42100},
+            {"month": "Oct 2024", "followers": 43600},
+            {"month": "Nov 2024", "followers": 44900},
+            {"month": "Dic 2024", "followers": 46200}
+        ]
+    },
+    "tiktok": {
+        "handle": "samanthacrianza",
+        "followers": 78400,
+        "following": 892,
+        "videos": 234,
+        "verified": false,
+        "totalLikes": 2140000,
+        "averageViews": 45200,
+        "averageLikes": 2100,
+        "averageComments": 185,
+        "averageShares": 89,
+        "topVideos": [
+            {
+                "title": "Consecuencias naturales vs castigos",
+                "views": 189200,
+                "likes": 8400,
+                "comments": 456,
+                "shares": 234,
+                "date": "2024-12-12",
+                "duration": "1:23"
+            },
+            {
+                "title": "Rutinas que funcionan para la hora de dormir",
+                "views": 156800,
+                "likes": 6100,
+                "comments": 389,
+                "shares": 198,
+                "date": "2024-12-08",
+                "duration": "2:15"
+            },
+            {
+                "title": "3 errores que cometen las madres primerizas",
+                "views": 134500,
+                "likes": 5200,
+                "comments": 567,
+                "shares": 145,
+                "date": "2024-12-05",
+                "duration": "1:45"
+            },
+            {
+                "title": "Cómo hablar con niños de 2 años",
+                "views": 98700,
+                "likes": 4300,
+                "comments": 234,
+                "shares": 123,
+                "date": "2024-12-01",
+                "duration": "1:56"
+            },
+            {
+                "title": "Señales de que tu hijo necesita más conexión",
+                "views": 87300,
+                "likes": 3900,
+                "comments": 298,
+                "shares": 156,
+                "date": "2024-11-28",
+                "duration": "2:03"
+            }
+        ],
+        "monthlyGrowth": [
+            {"month": "Jul 2024", "followers": 62100},
+            {"month": "Ago 2024", "followers": 65800},
+            {"month": "Sep 2024", "followers": 69200},
+            {"month": "Oct 2024", "followers": 72400},
+            {"month": "Nov 2024", "followers": 75600},
+            {"month": "Dic 2024", "followers": 78400}
+        ]
+    },
+    "audience": {
+        "demographics": {
+            "gender": {"female": 87.3, "male": 12.7},
+            "ageGroups": {
+                "18-24": 15.2,
+                "25-34": 68.4,
+                "35-44": 14.1,
+                "45+": 2.3
+            },
+            "locations": {
+                "España": 71.2,
+                "México": 12.8,
+                "Argentina": 8.5,
+                "Colombia": 4.2,
+                "Otros": 3.3
+            },
+            "interests": [
+                {"category": "Crianza y Maternidad", "percentage": 89.4},
+                {"category": "Educación Infantil", "percentage": 76.2},
+                {"category": "Bienestar Familiar", "percentage": 68.9},
+                {"category": "Psicología Infantil", "percentage": 54.7},
+                {"category": "Salud y Nutrición", "percentage": 43.1}
+            ]
+        },
+        "engagementPatterns": {
+            "peakHours": ["9:00", "13:00", "18:00", "21:00"],
+            "activeDays": ["Lunes", "Miércoles", "Viernes", "Domingo"],
+            "contentPreferences": [
+                {"type": "Tips prácticos", "engagement": 8.9},
+                {"type": "Testimonios reales", "engagement": 7.6},
+                {"type": "Infografías", "engagement": 6.8},
+                {"type": "Videos cortos", "engagement": 9.2},
+                {"type": "Carousels educativos", "engagement": 7.4}
+            ]
+        }
+    },
+    "pricing": {
+        "instagramPost": {"min": 450, "max": 750, "currency": "EUR"},
+        "instagramStory": {"min": 200, "max": 350, "currency": "EUR"},
+        "instagramReel": {"min": 600, "max": 950, "currency": "EUR"},
+        "tiktokVideo": {"min": 600, "max": 900, "currency": "EUR"},
+        "packageDeals": {
+            "instagram3posts": {"price": 1800, "description": "3 posts + stories", "currency": "EUR"},
+            "crossPlatform": {"price": 2200, "description": "IG post + TikTok video", "currency": "EUR"},
+            "monthlyPartnership": {"price": 4500, "description": "4 posts + 8 stories + 2 TikToks", "currency": "EUR"}
+        },
+        "additionalServices": {
+            "consulting1h": {"price": 150, "description": "Consulta personalizada crianza", "currency": "EUR"},
+            "contentCreation": {"price": 300, "description": "Creación de contenido personalizado", "currency": "EUR"},
+            "liveWorkshop": {"price": 800, "description": "Workshop en vivo 90 min", "currency": "EUR"}
+        }
+    },
+    "brandCollaborations": [
+        {"brand": "Chicco", "type": "Partnership", "duration": "3 meses", "status": "Activa"},
+        {"brand": "Fisher-Price", "type": "Sponsored Content", "duration": "1 mes", "status": "Completada"},
+        {"brand": "BabyBjörn", "type": "Product Review", "duration": "2 semanas", "status": "Completada"},
+        {"brand": "Miniland", "type": "Ambassador", "duration": "6 meses", "status": "Activa"}
+    ],
+    "achievements": [
+        {"title": "Top 50 Influencers Maternidad España 2024", "source": "Influencer Marketing Hub"},
+        {"title": "Engagement Rate Superior 7.8%", "source": "Análisis interno"},
+        {"title": "85% Audiencia Femenina Target", "source": "Instagram Insights"},
+        {"title": "Crecimiento 400% en TikTok 2024", "source": "Análisis anual"}
+    ],
+    "lastUpdated": "2024-12-20T10:30:00Z",
+    "dataQuality": {
+        "instagram": "manual",
+        "tiktok": "manual", 
+        "audience": "estimated",
+        "pricing": "current"
+    }
+}

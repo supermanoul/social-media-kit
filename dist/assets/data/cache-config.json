@@ -1,0 +1,39 @@
+{
+    "cacheSettings": {
+        "defaultExpiry": 3600000,
+        "instagram": {
+            "profile": 7200000,
+            "posts": 3600000,
+            "engagement": 1800000
+        },
+        "tiktok": {
+            "profile": 7200000,
+            "videos": 3600000,
+            "metrics": 1800000
+        }
+    },
+    "rateLimiting": {
+        "instagram": {
+            "requestDelay": 2000,
+            "maxRetries": 3,
+            "backoffMultiplier": 2
+        },
+        "tiktok": {
+            "requestDelay": 3000,
+            "maxRetries": 3,
+            "backoffMultiplier": 2
+        }
+    },
+    "scrapingConfig": {
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "corsProxy": "https://api.allorigins.win/get?url=",
+        "respectRobotsTxt": true,
+        "fallbackToManual": true,
+        "maxConcurrentRequests": 2
+    },
+    "dataValidation": {
+        "minFollowers": 100,
+        "maxEngagementRate": 20,
+        "requiredFields": ["followers", "posts", "engagementRate"]
+    }
+}
